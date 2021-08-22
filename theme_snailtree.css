@@ -48,7 +48,7 @@ body:before {
 }
 
 .jumbotron {
-	background-color: #316570; /*#e8e6b6;*/
+	background-color: ##36c8e69e; /*#e8e6b6;*/
 	position: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -84,7 +84,7 @@ body:before {
 }
 
 .container-beige {
-	background-color: #8eb6bf;
+	background-color: ##d8fb16a6;
 	color: black;
 	position: center;
 	border: 4px solid transparent;
