@@ -1399,19 +1399,19 @@ function runLog(){
 					if(checkHash(storetxhash, result[i].transactionHash) != 0) {
 						dateLog(result[i].blockNumber);
 						if(result[i].event == "GavePecan"){
-							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " gave " + numberWithSpaces(result[i].args.pecan) + " Eggs to Wonkers, and got " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " ETH in exchange!";							
+							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " gave " + numberWithSpaces(result[i].args.pecan) + " Eggs to Wonkers, and got " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " BNB in exchange!";							
 						} else if(result[i].event == "PlantedRoot"){
-							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " invoked a MotherEgg with " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " ETH. Their tree reaches " + numberWithSpaces(result[i].args.treesize) + " in size.";
+							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " invoked a MotherEgg with " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " BNB. Their MotherEgG reaches " + numberWithSpaces(result[i].args.treesize) + " in size.";
 						} else if(result[i].event == "ClaimedShare"){
-							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " claimed their share worth " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " ETH and got " + numberWithSpaces(result[i].args.pecan) + " Eggs.";
+							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " claimed their share worth " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " BNB and got " + numberWithSpaces(result[i].args.pecan) + " Eggs.";
 						} else if(result[i].event == "GrewTree"){
 							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " grew their MotherEGG and won " + numberWithSpaces(result[i].args.pecan) + " Eggs. Their boost is " + result[i].args.boost + "x.";
 						} else if(result[i].event == "WithdrewBalance"){
-							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " withdrew " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " ETH from their balance.";
+							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " withdrew " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " BNB from their balance.";
 						} else if(result[i].event == "PaidThrone"){
-							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " paid tribute to the CryptoEGG POOL! " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " ETH have been sent.";
+							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " paid tribute to the CryptoEGG POOL! " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " BNB have been sent.";
 						} else if(result[i].event == "BoostedPot"){
-							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " makes a generous " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " ETH donation to the JackPot.";
+							eventlogdoc.innerHTML += "<br>[~" + datetext + "] " + formatEthAdr(result[i].args.player) + " makes a generous " + formatEthValue2(web3.fromWei(result[i].args.eth,'ether')) + " BNB donation to the JackPot.";
 						}
 					logboxscroll.scrollTop = logboxscroll.scrollHeight;
 					}
