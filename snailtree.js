@@ -1431,7 +1431,7 @@ plantedrootEvent.watch(function(error, result){
 		//////////console.log(result);
 		if(checkHash(storetxhash, result.transactionHash) != 0) {
 			date24();
-			eventlogdoc.innerHTML += "<br>[" + datetext + "] " + formatEthAdr(result.args.player) + " Invoked MotherEGG with " + formatEthValue2(web3.fromWei(result.args.eth,'ether')) + " BNB. Their tree reaches " + numberWithSpaces(result.args.treesize) + " in size.";
+			eventlogdoc.innerHTML += "<br>[" + datetext + "] " + formatEthAdr(result.args.player) + " Invoked MotherEGG with " + formatEthValue2(web3.fromWei(result.args.eth,'ether')) + " BNB. Their MotherEGG reaches " + numberWithSpaces(result.args.treesize) + " in size.";
 			logboxscroll.scrollTop = logboxscroll.scrollHeight;
 		}
 	}
@@ -1490,7 +1490,7 @@ grewtreeEvent.watch(function(error, result){
 		//////////console.log(result);
 		if(checkHash(storetxhash, result.transactionHash) != 0) {
 			date24();
-			eventlogdoc.innerHTML += "<br>[" + datetext + "] " + formatEthAdr(result.args.player) + " grew their Tree and won " + numberWithSpaces(result.args.pecan) + " Eggs. Their boost is " + result.args.boost + "x.";
+			eventlogdoc.innerHTML += "<br>[" + datetext + "] " + formatEthAdr(result.args.player) + " grew their MotherEGG and won " + numberWithSpaces(result.args.pecan) + " Eggs. Their boost is " + result.args.boost + "x.";
 			logboxscroll.scrollTop = logboxscroll.scrollHeight;
 		}
 	}
