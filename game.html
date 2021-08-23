@@ -71,14 +71,14 @@
 					<img class="wobble-hor-bottom" src="img/ethertree.gif" height="256">
 				</div>
 				<div class="col-sm-8">
-					<h2 class="black-shadow" align="center"><span id="playertree">?</span> MotherEGG Size | Growth Boost <span id="playerboost">?</span>x</h2><br>
+					<h2 class="black-shadow" align="center"><span id="playertree">?</span> MotherEGG Size | Upgrade Boost <span id="playerboost">?</span>x</h2><br>
 					<h2>BNB Share: <span id="playerethershare">?</span> BNB</h2><br>
 					<h2>Eggs Reward: <span id="playerpecanshare">?</span></h2><br>
 					<h2>Last Claimed: <span id="playerlastclaim">?</span></h2><br>
 				</div>
 			</div>
 		</div>
-		<!-- TREE ACTIONS. PLANT, GROW, CLAIM -->
+		<!-- TREE ACTIONS. PLANT, Upgrade, CLAIM -->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm" align="center">
@@ -90,9 +90,9 @@
 				</h5></h5></div>
 				<div class="col-sm" align="center">
 					<div class="container-beige">
-						<button class="btn btn-lg btn-success" onclick="webCheckRoot(webCheckTime)">GROW MOTHER EGG</button>
+						<button class="btn btn-lg btn-success" onclick="webCheckRoot(webCheckTime)">Upgrade MOTHER EGG</button>
 					</div>
-					<h5 class="black-shadow">Use BNBs Share to grow Size</h5>
+					<h5 class="black-shadow">Use BNBs Share to Upgrade Size</h5>
 					<span id="boostready"><h5 class="black-shadow">Adds Boost once per hour</h5></span>
 				</div>
 				<div class="col-sm" align="center">
@@ -139,7 +139,7 @@
 				<h3 class="black-shadow">UNCLAIMED BNB AND EGGS</h3><br>
 				<div class="container-beige">
 					<h5>Buy another mother egg will reset your accumulated BNB and Eggs to 0!</h5>
-					<h5>It's recommended you Grow your Mother egg or Claim your Share before buy a new mother egg.</h5>
+					<h5>It's recommended you Upgrade your Mother egg or Claim your Share before buy a new mother egg.</h5>
 				</div>
 				<div class="container" align="center">
 					<button type="button" class="btn btn-success" onclick="CloseModal()">Cancel</button>
@@ -147,17 +147,17 @@
 				</div>
 			</div>
 		</div>
-		<!-- MODAL. FOR GROWTH BEFORE 1 HOUR -->
+		<!-- MODAL. FOR Upgrade BEFORE 1 HOUR -->
 		<div id="growmodal" class="modal">
 			<div class="jumbotron modal-content" align="center">
 				<h3 class="black-shadow">BOOST NOT AVAILABLE</h3><br>
 				<div class="container-beige">
 					<h5>It has been less than 1 Hour since your last MotherEGG action.</h5>
-					<h5>If you Grow your MotherEGG now, you will not get an extra Boost!</h5>
+					<h5>If you Upgrade your MotherEGG now, you will not get an extra Boost!</h5>
 				</div>
 				<div class="container" align="center">
 					<button type="button" class="btn btn-success" onclick="CloseModal()">Cancel</button>
-					<button type="button" class="btn btn-success" onclick="webGrowTree()">Grow Mother</button>
+					<button type="button" class="btn btn-success" onclick="webGrowTree()">Upgrade MotherEGG</button>
 				</div>
 			</div>
 		</div>
@@ -166,7 +166,7 @@
 			<div class="jumbotron modal-content" align="center">
 				<h3 class="black-shadow">NO MOTHER</h3><br>
 				<div class="container-beige">
-					<h5>Your Mother Egg cannot grow without roots. Mother Egg</h5>
+					<h5>Your Mother Egg cannot Upgrade without roots. Mother Egg</h5>
 					<h5>Spend at least 0.001 BNB to start Invoking Mother Egg!</h5>
 				</div>
 				<div class="container" align="center">
@@ -180,7 +180,7 @@
 				<h3 class="black-shadow">NOT ENOUGH BNB</h3><br>
 				<div class="container-beige">
 					<h5>You must use at least 0.001 BNB to Invoke Mother Egg.</h5>
-					<h5>After Invoking Mother Egg, you will be able to Grow your MotherEGG with less than 0.001 BNB.</h5>
+					<h5>After Invoking Mother Egg, you will be able to Upgrade your MotherEGG with less than 0.001 BNB.</h5>
 				</div>
 				<div class="container" align="center">
 					<button type="button" class="btn btn-success" onclick="CloseModal()">Got it!</button>
@@ -312,13 +312,13 @@
 				<h5>If your gift fills the bar, you win the jackpot!</h5>
 				<br><h5><b>As more MotherEGGs are invoking, Wonkers needs more Eggs</b></h5>
 				<h5>The amount required is in direct proportion with BNB spent on Invoking Mother Egg.</h5>
-				<br><h3 class="black-shadow"><b>Next step: Growing your MotherEGG</b>
-				<br></h3><h5><b>Use your Share to Grow your MotherEGG</b></h5>
+				<br><h3 class="black-shadow"><b>Next step: Upgrade your MotherEGG</b>
+				<br></h3><h5><b>Use your Share to Upgrade your MotherEGG</b></h5>
 				<h5>The BNB you would have gotten is reinvested to raise your MotherEGG Size.</h5>
-				<br><h5><b>Increase your Growth Boost</b></h5>
-				<h5>For every hour since your last claim, Growing your MotherEGG gives you one extra boost up to 10.</h5>
+				<br><h5><b>Increase your Upgrade Boost</b></h5>
+				<h5>For every hour since your last claim, Upgrade your MotherEGG gives you one extra boost up to 10.</h5>
 				<br><h5><b>Your Boost multiplies your Egg claims</b></h5>
-				<h5>Whether from Grow MotherEGG or Harvest Share.</h5>
+				<h5>Whether from Upgrade MotherEGG or Harvest Share.</h5>
 				<br><h3 class="black-shadow"><b>End of a Round</b>
 				<br></h3><h5><b>After Winter comes Spring</b></h5>
 				<h5>When a player wins the round, the game immediately moves to the next round.</h5>
@@ -338,7 +338,7 @@
 		<div class="container" align="center">
 			<h1 class="black-shadow">IMPORTANT NOTE</h1>
 			<div class="container-beige">
-				<h4><b>The growing BNB and EGGn rewards on display are local</b><br>
+				<h4><b>The Upgrade BNB and EGG rewards on display are local</b><br>
 				</h4><h5>Due to synchronisation with the blockchain, it's possible for rewards to differ slightly from these displayed values.<br>
 				<h5>If you need to be certain, wait a couple minutes between the displayed rewards you desire and your action.
 			</h5></h5></div>
@@ -360,17 +360,17 @@
 				<p>Harvest Share transfers unclaimed BNB to the player's ingame balance.</p>
 				<p>BNB rewards accumulate at a rate of 4% of the MotherEGG Size value per day.</p><br>
 				<p>Harvest Share gives 1 Egg per MotherEGG Size per day, multiplied by personal bonus and Boost.</p>
-				<p>The personal bonus starts at 4, and increases by 1 per hour since the player's last MotherEGG action (Invoke, Grow or Harvest).</p>
-				<p>The Boost is a fixed multiplier obtained through Grow MotherEGG.</p>
+				<p>The personal bonus starts at 4, and increases by 1 per hour since the player's last MotherEGG action (Invoke, Upgrade or Harvest).</p>
+				<p>The Boost is a fixed multiplier obtained through Upgrade MotherEGG.</p>
 				<p>For example, Harvesting with a MotherEGG Size of 2MM and a Boost of 1 after 1 hour (3600 seconds) would give you: 2MM * 1 * (4 + 1) / 86400 = 416 666 Eggs</p>
 			</div>
-			<h4><b>Grow MotherEGG</b></h4>
+			<h4><b>Upgrade MotherEGG</b></h4>
 			<div class="container-beige">
-				<p>Grow MotherEGG uses the BNB share to grow MotherEGG Size at a rate identical to mother egg.</p>
+				<p>Upgrade MotherEGG uses the BNB share to Upgrade MotherEGG Size at a rate identical to mother egg.</p>
 				<p>The player also receives the same amount of Eggs as for Harvest Share.</p><br>
 				<p>If it has been at least one hour since the player's last MotherEGG action, the player gets a Boost.</p>
 				<p>For each extra hour, the player also gets a Boost, up to a maximum of +10 at once.</p>
-				<p>For example, Growing the MotherEGG after 5 hours 30 minutes will give the player +5 Boost.</p>
+				<p>For example, Upgrade the MotherEGG after 5 hours 30 minutes will give the player +5 Boost.</p>
 			</div>
 			<h4><b>Give Egg</b></h4>
 			<div class="container-beige">
