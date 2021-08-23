@@ -340,7 +340,7 @@ function showLeaderboard() {
 	for(i = 1; i < 6; i++) {
 		for(j = 0; j < 5; j++) {
 			if(d_leaderboard[j].rank == i) {
-				leaderboardArray[i].innerHTML = formatEthAdr(d_leaderboard[j].address) + "<br>" + numberWithSpaces(d_leaderboard[j].tree) + " Tree Size <br>" + numberWithSpaces(d_leaderboard[j].pecan) + " Pecans <br>";
+				leaderboardArray[i].innerHTML = formatEthAdr(d_leaderboard[j].address) + "<br>" + numberWithSpaces(d_leaderboard[j].tree) + " MotherEGG Size <br>" + numberWithSpaces(d_leaderboard[j].pecan) + " Eggs <br>";
 			}
 		}
 	}
@@ -1534,7 +1534,7 @@ gavepecanEvent.watch(function(error, result){
 		//////////console.log(result);
 		if(checkHash(storetxhash, result.transactionHash) != 0) {
 			date24();
-			eventlogdoc.innerHTML += "<br>[" + datetext + "] " + formatEthAdr(result.args.player) + " gave " + numberWithSpaces(result.args.pecan) + " Pecans to Wonkers, and got " + formatEthValue2(web3.fromWei(result.args.eth,'ether')) + " ETH in exchange!";
+			eventlogdoc.innerHTML += "<br>[" + datetext + "] " + formatEthAdr(result.args.player) + " gave " + numberWithSpaces(result.args.pecan) + " Eggs to Wonkers, and got " + formatEthValue2(web3.fromWei(result.args.eth,'ether')) + " ETH in exchange!";
 			logboxscroll.scrollTop = logboxscroll.scrollHeight;
 		}
 	}
